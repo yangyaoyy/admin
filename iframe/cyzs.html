@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>存疑证书</title>
+		<meta name="keywords" content="关键词,关键词">
+		<meta name="description" content="">
+		<link href="../css/public.css" rel="stylesheet" />
+		<link href="../css/sh.css" rel="stylesheet" />
+		<link href="../css/page.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="audit_section">
+            <div class="certificate">
+                <a><i class="ico zslb"></i>证书列表</a>
+                <a><i class="ico dssq"></i>待审申请</a>
+                <a><i class="ico kscj"></i>考试成绩</a>
+                <a><i class="ico wxzs"></i>无效证书</a>
+                <a class="thisNav"><i class="ico cyzs" style="background-position:-80px -467px;"></i>存疑证书</a>
+                <a><i class="ico sbsz"></i>申报设置</a>
+            </div>
+			<h1><i class="pic_sh"></i>存疑证书</h1>
+			<!--examine start-->
+            <div class="fytop">
+                <div class="jfTime">
+                    <p>模糊搜索</p>
+                    <label class="glLab flotLeft"><input type="text" placeholder="请输入会员名称或单位" /></label>
+                    <a class="search">搜索</a>
+                </div>
+            </div>
+			<!--end examine-->
+
+			<!--examine_list start-->
+			<div class="examine_list impeach_list">
+				<dl>
+					<dt>
+						<p class="applysquare">被存疑证书</p>
+						<p class="apply_projects"><span>存疑单位/人员</span></p>
+						<p class="apply_time"><span>存疑原因</span></p>
+						<p class="finally_sub"><span>存疑时间</span></p>
+						<p class="apply_material"><span>存疑证据</span></p>
+						<p class="examine_operation examine_cy"><span>操作</span></p>
+					</dt>
+					<dd>
+						<p class="applysquare">甲</p>
+						<p class="apply_projects"><span>甲</span></p>
+						<p class="apply_time"><span>超过有效期</span></p>
+						<p class="finally_sub">
+							<span>2016-9-10</span>
+							<span>15:30:30</span>
+						</p>
+						<p class="apply_material"><a href="javascript:;">点击下载</a></p>
+						<p class="examine_operation examine_cy">
+							<a href="javascript:;">
+								<i class="pic_sh pic_cy1"></i>
+								<i class="pic_sh pic_cy2"></i>
+							</a>
+						</p>
+					</dd>
+					<dd>
+						<p class="applysquare">甲</p>
+						<p class="apply_projects"><span>甲</span></p>
+						<p class="apply_time"><span>超过有效期</span></p>
+						<p class="finally_sub">
+							<span>2016-9-10</span>
+							<span>15:30:30</span>
+						</p>
+						<p class="apply_material"><a href="javascript:;">点击下载</a></p>
+						<p class="examine_operation examine_cy">
+							<a href="javascript:;">
+								<i class="pic_sh pic_cy1"></i>
+								<i class="pic_sh pic_cy2"></i>
+							</a>
+						</p>
+					</dd>
+					<dd>
+						<p class="applysquare">甲</p>
+						<p class="apply_projects"><span>甲</span></p>
+						<p class="apply_time"><span>超过有效期</span></p>
+						<p class="finally_sub">
+							<span>2016-9-10</span>
+							<span>15:30:30</span>
+						</p>
+						<p class="apply_material"><a href="javascript:;">点击下载</a></p>
+						<p class="examine_operation examine_cy">
+							<a href="javascript:;">
+								<i class="pic_sh pic_cy1"></i>
+								<i class="pic_sh pic_cy2"></i>
+							</a>
+						</p>
+					</dd>
+				</dl>
+				<div class="pagination">
+					<div class="page">
+						<a href="javascript:;">首页</a>
+						<a class="Previous">上一页</a>
+						<span>1</span>
+						<a href="javascript:;">2</a>
+						<a href="javascript:;">3</a>
+						<a href="javascript:;">4</a>
+						<a href="javascript:;">5</a>
+						<a href="javascript:;">...</a>
+						<a href="javascript:;">末页</a>
+						<a class="Previous" href="javascript:;">末页</a>
+					</div>
+				</div>
+			</div>
+			<!--end examine_list-->
+
+		</div>
+		
+		<!--处理用户存疑-->
+		<div class="audit_Popup yhcytc" id="clyhcy_popup">
+			<div class="ptan_title">
+				<p><i class="pic_sh"></i>处理用户存疑</p>
+				<a href="javascript:;" class="gbtc"><i class="pic_sh"></i></a>
+			</div>
+			<div class="ptan_con">
+				<ul>
+					<li>
+						<div class="cytc_title">被存疑证书：</div>
+						<input type="text" />
+					</li>
+					<li>
+						<div class="cytc_title">处理方法：</div>
+						<select>
+							<option value="0">取消该证书</option>
+							<option value="1">使用该证书</option>
+							<option value="2">测试该证书</option>
+							<option value="3">查询该证书</option>
+						</select>
+					</li>
+					<li style="margin:20px 0 20px;">
+						<div class="cytc_title">处理评语：</div>
+						<textarea name="MSG" cols="40" rows="4" class="clpy" placeholder="请输入处理的评语" /></textarea>
+					</li>
+				</ul>
+				
+			</div>
+			<div class="ptan_bottom">
+				<a class="ptan_quedi" href="javascript:;">确定</a>
+				<a class="ptan_quxiao" href="javascript:;">取消</a>
+			</div>
+		</div>
+
+		<!--驳回用户存疑-->
+		<div class="audit_Popup yhcytc" id="boyhcy_Popup">
+			<div class="ptan_title">
+				<p><i class="pic_sh"></i>驳回用户存疑</p>
+				<a href="javascript:;" class="gbtc"><i class="pic_sh"></i></a>
+			</div>
+			<div class="ptan_con">
+				<ul>
+					<li>
+						<div class="cytc_title">被存疑证书：</div>
+						<input type="text" />
+					</li>
+					<li>
+						<div class="cytc_title">驳回原因：</div>
+						<textarea name="MSG" cols="40" rows="4" class="clpy" placeholder="请输入处理的评语" /></textarea>
+					</li>
+					<li style="margin:0 0 40px;">
+						<div class="cytc_title"></div>
+						<input type="checkbox" class="bh_yhxy" name="a" />
+						<p>不再接受该投诉人存疑投诉</p>
+					</li>
+				</ul>
+				
+			</div>
+			<div class="ptan_bottom">
+				<a class="ptan_quedi" href="javascript:;">确定</a>
+				<a class="ptan_quxiao" href="javascript:;">取消</a>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../js/jquery1.7.2.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+					//弹出处理用户存疑
+					function tui(){
+						$("#clyhcy_popup").fadeIn(100);
+					}
+					//弹出驳回用户存疑
+					function tong(){
+						$("#boyhcy_Popup").fadeIn(100);
+					}
+					//点击取消||点击弹窗上面的关闭按钮隐藏
+					function close(){
+						$(".gbtc").click(function(){
+							$(".audit_Popup").fadeOut(100);
+						});
+
+						$(".ptan_quxiao").click(function(){
+							$(".audit_Popup").fadeOut(100);
+						});
+					}
+
+					//弹窗居中方法
+					function alertTc(tcObj){
+						tcObj.show();
+						var tcObjHei = tcObj.outerHeight();
+						var tcObjWid = tcObj.outerWidth();
+						tcObj.css("margin-left",-(tcObjHei/2));
+						tcObj.css("margin-top",-(tcObjWid/2));
+					}
+
+					$(".pic_cy1").click(function(){
+						tui();
+						close();
+						alertTc($("#clyhcy_popup"));
+					});
+					$(".pic_cy2").click(function(){
+						tong();
+						close();
+						alertTc($("#boyhcy_Popup"));
+					});
+				});
+		</script>
+	</body>
+</html>

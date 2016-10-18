@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>协会后台框架</title>
+<script src="js/jquery1.7.2.min.js"></script>
+<script src="js/js.js"></script>
+<link href="css/public.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="war">
+    <div class="top">
+        <div class="logo"><img src="images/logo.jpg"></div>
+        <h1>后台名称</h1>
+        <div class="userName">
+            <div class="userHead"><a target="if" href="iframe/grxx2.html"><img src="images/userHead.jpg" class="cs"></a></div>
+            <div class="nameposition">
+                <strong>用户名</strong>
+                <p>用户职务</p>
+            </div>
+            <a class="ico close"></a>
+        </div>
+    </div>
+    <div class="con">
+        <div class="left">
+            <dl>
+                <dt><a><i class="ico upMenu"></i>收起菜单</a></dt>
+                <dd><div class="firstMun"><a target="if" href="iframe/new.html"><i class="ico indexMun"></i>首页</a></div></dd>
+                <dd><div class="firstMun"><a><i class="ico userMent"></i>会员管理</a></div></dd>
+				<dd><div class="firstMun"><a target="if" href="iframe/new.html"><i class="ico hdglMun"></i>活动管理</a></div></dd>
+                <dd><div class="firstMun"><a target="if" href="iframe/new.html"><i class="ico fyMun"></i>费用管理</a></div></dd>
+                <dd>
+                    <div class="firstMun"><a><i class="ico management"></i>内容管理<i class="ico leftArrow"></i></a></div>
+                    <div class="secMun has"><a><i class="ico"></i>站点内容管理</a><a><i class="ico"></i>通知公告</a></div>
+                </dd>
+                <dd>
+                    <div class="firstMun"><a><i class="ico organization"></i>组织管理<i class="ico leftArrow"></i></a></div>
+                    <div class="secMun has"><a><i class="ico"></i>圈子管理</a><a><i class="ico"></i>上下级单位管理</a></div>
+                </dd>
+
+                <dd>
+                    <div class="firstMun"><a><i class="ico service"></i>服务管理<i class="ico leftArrow"></i></a></div>
+                    <div class="secMun has"><a><i class="ico"></i>申报管理</a><a><i class="ico"></i>调查投票</a><a><i class="ico"></i>活动管理</a><a><i class="ico"></i>群发推送</a></div>
+                </dd>
+                <dd class="hh">
+                    <div class="firstMun"><a><i class="ico setMun"></i>设置<i class="ico leftArrow"></i></a></div>
+                    <div class="secMun has"><a><i class="ico"></i>基础设置</a><a><i class="ico"></i>职务设置</a><a><i class="ico"></i>高级设置</a></div>
+                </dd>
+            </dl>
+            <div class="shrink"><i class="ico"></i></div>
+        </div>
+        <div class="middle">
+            <div class="topNav">
+                <div class="marAuto">
+                    <div class="dh"><a class="firNav"><i class="ico indexNav"></i><b>首页</b></a></div>
+                    <div class="dh"><a class="firNav" target="if" href="iframe/hygl.html"><i class="ico userNav"></i><b>会员管理</b></a></div>
+                    <div class="dh"><a class="firNav"><i class="ico hdglNav"></i><b>活动管理</b></a></div>
+                    <div class="dh"><a class="firNav"><i class="ico fyglNav"></i><b>费用管理</b></a></div>
+                    <div class="dh">
+                    	<a class="firNav"><i class="ico nrNav"></i><b>内容管理<em class="ico"></em></b></a>
+                        <dl>
+                        	<dd><a>站点内容管理</a></dd>
+                            <dd><a>通知公告</a></dd>
+                        </dl>
+                    </div>
+                    <div class="dh">
+                    	<a class="firNav"><i class="ico zzNav"></i><b>组织管理<em class="ico"></em></b></a>
+                        <dl>
+                        	<dd><a>圈子管理</a></dd>
+                            <dd><a>上下级单位管理</a></dd>
+                            <dd><a>高级设置</a></dd>
+                        </dl>
+                    </div>
+                    <div class="dh">
+                    	<a class="firNav"><i class="ico fwNav"></i><b>服务管理<em class="ico"></em></b></a>
+                        <dl>
+                        	<dd><a>申报管理</a></dd>
+                            <dd><a>调查投票</a></dd>
+                            <dd><a>活动管理</a></dd>
+                            <dd><a>群发推送</a></dd>
+                        </dl>
+                    </div>
+                    <div class="dh">
+                    	<a class="firNav"><i class="ico szNav"></i><b>设置<em class="ico"></em></b></a>
+                        <dl>
+                        	<dd><a>基础设置</a></dd>
+                            <dd><a>职务设置</a></dd>
+                            <dd><a>高级设置</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="iframe">
+                <iframe src="iframe/grxx2.html" name="if" frameborder="0" scrolling="yes" id="if"></iframe>
+                <div class="a"></div>
+            </div>
+        </div>
+    <!--    <div class="right">
+            <div class="lately">
+                <dl>
+                    <dt><a>最近[隐藏]</a></dt>
+                    <dd><a><i class="ico zdnr"></i>站点内容管理</a></dd>
+                    <dd><a><i class="ico wkgl"></i>文库管理</a></dd>
+                    <dd><a><i class="ico tggl"></i>通知公告</a></dd>
+                </dl>
+            </div>
+        </div>-->
+    </div>
+</div>
+<script>
+$(".con").height($(document).height()-$(".top").height());
+$(function(){
+	$(".left dd").hover(function(){
+		if($(this).children().length==2)
+		{
+			$(this).find(".leftArrow").css("animation","spin 0.5s forwards 1");
+			$(this).siblings("dd").find(".leftArrow").css("animation","spin2 0.5s forwards 1");
+			$(this).children(".secMun").stop(true,true).slideDown();
+			$(this).siblings("dd").children(".secMun").stop(true,true).slideUp();
+		}
+	});
+//	var leftheight=$(".left").outerHeight();
+//	$(".con .left dl dt").click(function(){
+//		var thisheight=$(this).outerHeight();
+//		var left=$(this).parents(".left").outerHeight();
+//		//alert(conheight)
+//		if(thisheight==left)
+//		{
+//			$(this).parents(".left").css("overflow","visible");
+//			$(this).children().html("<i class='ico upMenu'></i>收起菜单");
+//			$(this).parents(".left").animate({
+//				height:leftheight
+//			});
+//		}
+//		else
+//		{
+//			$(this).parents(".left").css("overflow","hidden");
+//			$(this).children().html("<i class='ico upMenu'></i>展开菜单");
+//			$(this).parents(".left").animate({
+//				height:$(this).outerHeight()
+//			});
+//		};
+//	});
+	$(".left").hover(function(){
+		var leftWidth=$(this).outerWidth();
+		$(this).stop(true,true).animate({
+			left:-0
+		});
+	},function(){
+		var leftWidth=$(this).outerWidth();
+		$(this).stop(true,true).animate({
+			left:-leftWidth
+		});
+	});
+	$(".marAuto .dh").hover(function(){
+		$(this).children("dl").stop(true,true).slideDown();
+		$(this).children("a").addClass("navAdd");
+	},function(){
+		$(this).children("dl").stop(true,true).slideUp();
+		$(this).children("a").removeClass("navAdd");	
+	});
+});
+</script>
+
+
+</body>
+</html>

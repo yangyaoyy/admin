@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人信息</title>
+<link href="../css/public.css" rel="stylesheet" />
+<link href="../css/page.css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="../css/jedate.css">
+</head>
+
+<body>
+<div class="nrDh">
+	<div class="judh">
+    	<a class="onThis" href="grxx2.html">个人信息</a><a href="hjxx.html">会籍信息</a><a href="fyxx.html">费用信息</a><a href="yhglckxg-qyxx-jbxx.html">企业信息</a>
+    </div>
+</div>
+<div class="wra">
+	<h1><i class="ico titIco"></i>查看个人信息/修改个人信息</h1>
+	<div class="mkTi">
+    	<strong><em>个人信息</em></strong>
+        <form id="xinxi_1">
+            <dl class="tablePost">
+                <dd><p><em>*</em>姓名：</p><input type="text" placeholder="请输入会员姓名" name="name" /></dd>
+                <dd><p><em>*</em>会员性别：</p><label><input type="radio" name="gender" checked />男</label><label><input type="radio" name="gender" />女</label></dd>
+                <dd>
+                	<div><p>出生日期：</p><input type="text" placeholder="请选择日期" id="date" /></div>
+                    <div><p>年龄：</p><input type="text" value="25" /></div>
+                </dd>
+                <dd>
+                	<div><p>籍贯：</p><input type="text" value="江西南昌" /></div>
+                    <div><p>民族：</p><input type="text" value="汉" /></div>
+                </dd>
+                <dd>
+                	<div><p>身高：</p><input type="text" value="185"/></div>
+                    <div><p>体型：</p><input type="text" value="健硕" /></div>
+                </dd>
+                <dd><p>血型：</p><input type="text" value="A" /></dd>
+                <dd><p>婚姻状况：</p><input type="text" value="已婚" /></dd>
+                <dd>
+                	<div><p>政治面貌：</p><input type="text" value="群众" /></div>
+                    <div><p>最高学历：</p><input type="text" value="本科" /></div>
+                </dd>
+                <dd><p>身份证号：</p><input type="text" value="360121198575821234" /></dd>
+                <dd class="but"><input type="submit" value="保存" class="sub"><input type="button" value="取消"></dd>
+            </dl>
+        </form>
+    </div>
+	<div class="mkTi">
+    	<strong><em>联系信息</em></strong>
+        <form id="xinxi_2">
+            <dl class="tablePost">
+                <dd>
+                	<p>座机：</p>
+                    <div class="inpWar">
+                        <div class="hzinp remove">
+                            <input type="text" placeholder="区号" class="inp66" />
+                            <input type="text" placeholder="电话号码" />
+                        </div>
+                    </div>
+                    <a class="addInp" id="addTel"><i class="ico"></i>添加座机</a>
+                </dd>
+                <dd>
+                	<p><em>*</em>手机：</p>
+                    <div class="inpWar" style="width:212px;">
+                   	   <div class="hzinp remove"><input type="text" name="phone" id="phone" required /></div>
+					</div>
+                    <a class="addInp" id="mob"><i class="ico"></i>添加手机</a>
+                </dd>
+                <dd>
+					<div class="wxWar">
+                        <div class="wxqqW remove">
+                            <div class="hzinp"><p>QQ：</p><input type="text" value="403115824" /></div>
+                            <div class="hzinp"><p>微信：</p><input type="text" value="beiruan" /></div>
+                        </div>
+                        <a class="addInp newPb" id="qqwx"><i class="ico"></i>添加QQ或者微信</a>
+                    </div>               
+                </dd>
+                <dd>
+					<div class="wxWar">
+                        <div class="wxqqW remove">
+                            <div class="hzinp"><p>通讯地址：</p><input type="text" value="坛子口明珠广场" /></div>
+                            <div class="hzinp"><p>邮编：</p><input type="text" value="330000" /></div>
+                        </div>
+                        <a class="addInp newPb" id="addr"><i class="ico"></i>添加地址</a>
+                    </div>
+                </dd>
+                <dd>
+					<div class="wxWar">
+                        <div class="wxqqW remove">
+                            <div class="hzinp"><p>助理联系方式：</p><input type="text" value="185"/></div>
+                            <div class="hzinp"><p>电话：</p><input type="text" value="健硕" /></div>
+                        </div>
+                        <a class="addInp newPb" id="tjzl"><i class="ico"></i>添加助理</a>
+                    </div>
+                </dd>
+                <dd class="but"><input type="submit" value="保存" class="sub"><input type="button" value="取消"></dd>
+            </dl>
+        </form>
+    </div>
+</div>
+<script src="../js/jquery1.7.2.min.js"></script>
+<script src="../js/jquery.validate.js"></script>
+<script src="../js/jedate.js"></script>
+<script>
+	$(function(){
+		//添加座机
+		$("#addTel").click(function(){
+			$(this).siblings(".inpWar").append("<div class='hzinp remove'><input type='text' placeholder='区号' class='inp66' /><input type='text' placeholder='电话号码' /><a>删除</a></div>")	
+		});
+		//添加手机
+		$("#mob").click(function(){
+			$(this).siblings(".inpWar").append("<div class='hzinp remove'><input type='text' placeholder='填写新增的手机号码' /><a>删除</a></div>")	
+		});
+		//添加QQ微信
+		$("#qqwx").click(function(){
+			$(this).parent().append("<div class='wxqqW remove'><div class='hzinp'><p>QQ：</p><input type='text' placeholder='新增QQ' /></div><div class='hzinp'><p>微信：</p><input type='text' placeholder='新增微信' /><a>删除</a></div></div>")	
+		});
+		//添加地址邮编
+		$("#addr").click(function(){
+			$(this).parent().append("<div class='wxqqW remove'><div class='hzinp'><p>通讯地址：</p><input type='text' placeholder='新增通讯地址' /></div><div class='hzinp'><p>邮编：</p><input type='text' placeholder='新增邮编' /><a>删除</a></div></div>")	
+		});
+		//添加助理联系方式
+		$("#tjzl").click(function(){
+			$(this).parent().append("<div class='wxqqW remove'><div class='hzinp'><p>助理联系方式：</p><input type='text' placeholder='新增助理联系方式' /></div><div class='hzinp'><p>电话：</p><input type='text' placeholder='新增电话' /><a>删除</a></div></div>")	
+		});
+		
+		$(".hzinp a").live("click",function(){
+			$(this).parents(".remove").remove();	
+		})
+	})
+                        
+                        
+                            
+                            
+                            
+                                             
+jeDate({
+	dateCell: '#date',
+	isClear:true,
+	skinCell:"jedatered",
+	format: 'YYYY年MM月DD日 hh:mm:ss'
+});
+$(function(){
+	$("#xinxi_1").validate({
+		 rules:{
+			name: "required",	 
+		},
+		 messages:{
+			name:"请输入会员姓名"
+		}
+	});
+	$("#xinxi_2").validate({
+	rules: {
+	 phone: {
+		required:true,   
+		phone: true
+	  }
+	},
+	messages:{
+		phone:{   
+			required: "请输入您的联系电话",   
+			isPhone: "请输入一个有效的联系电话"  
+		 }
+	}
+	});
+});
+ // 手机号码验证    
+jQuery.validator.addMethod("phone", function(value, element) {    
+  var length = value.length;    
+  return this.optional(element) || (length == 11 && /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/.test(value));    
+}, "请正确填写您的手机号码。");
+
+</script>
+</body>
+</html>

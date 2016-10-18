@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+	*{margin:0;padding:0;}
+			body{color:#666;font-family:"微软雅黑";}
+			a{text-decoration:none;}
+			
+			.pic_sh{background:url("../images/sh.png") no-repeat;}
+			.audit_section{width:1000px;;background:#f5f5f5;margin:0 auto;}
+
+			.audit_section h1{padding:50px 0 30px;font-size:30px;color:#555;font-weight:500;}
+			h1 .pic_sh{width:30px;height:22px;display:inline-block;background-position:6px -3px;}
+			/*examin start*/
+			.audit_section .examine{width:96%;padding:0 20px;display:inline-block;}
+			.examine_so{width:300px;height:37px;line-height:37px;float:left;}
+			.examine_so p{margin-right:10px;float:left;}
+			.examine_so .e_so{width:127px;height:37px;border:1px solid #c1c1c1;float:left;border-right:none;padding-left:10px;}
+			.examine_so .sub_so{width:40px;height:37px;display:inline-block;border:1px solid #c1c1c1;background:#f0f0f0;}
+			.examine_so .sub_so .pic_sh{width:20px;height:20px;display:block;background-position:-23px -8px;margin:10px;}
+			.examine_batch{width:243px;height:37px;float:right;}
+			.examine_batch a{width:114px;height:36px;border-radius:3px;display:inline-block;line-height:37px;text-align:center;color:#fff;margin-left:5px;}
+			.examine_batch a i{width:20px;height:20px;display:block;margin:9px -9px 0px 10px;float:left;}
+			.examine_batch .e_pass{background:#2abe94;}
+			.examine_batch .e_pass .pic_sh{background-position:-130px -6px;}
+			.examine_batch .e_reject{background:#f56d27;}
+			.examine_batch .e_reject .pic_sh{background-position:-104px -6px;}
+			/*end examin*/
+
+			/*examine_list start*/
+			.audit_section .examine_list{width:99.8%;border:1px solid #ccc;box-shadow:0px 0px 8px -4px #000;margin:32px 0;background:#f9f9f9; box-shadow:0px -4px 21px #ccc;}
+			.audit_section .examine_list dl dt{height:45px;padding:0px 20px;line-height:45px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background:#fafafa;}
+			.audit_section .examine_list dl dt p{float:left;color:#555;padding-right:10px;}
+			.audit_section .applysquare,.apply_projects{width:130px;}
+			.audit_section .applysquare .gx{margin-right:15px;}
+			.audit_section .apply_time,.apply_material{width:203px;}
+			.audit_section .apply_material{width:203px;}
+			.audit_section .finally_sub{width:180px;}
+			.audit_section .finally_sub span{padding-right:3px;}
+			.audit_section .examine_operation{width:50px;}
+			.audit_section .examine_cy{text-align:center;}
+			.audit_section .examine_operation a{display:block;}
+			.audit_section dl dd{height:60px;line-height:60px;padding:0px 20px;border-bottom:1px solid #ccc;border-left:1px solid #fff;}
+			.audit_section .examine_list dl dd p{float:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding-right:10px;}
+			.audit_section .examine_list dl dd p a{color:#666;}
+			
+			.audit_section dl dd:hover{background:#fffeee;border-left:1px solid #f60;}
+			.audit_section .examine_list dl dd p a .pic_sh{width:20px;height:20px;display:block;background-position:-154px -7px;margin-top:20px;margin-left:5px;float:left;}
+			.audit_section .examine_list dl dd:hover p a .pic_sh{background-position:-210px -7px;}
+			.audit_section dd:hover p{color:#ff7f3d;}
+			.audit_section dd:hover span{color:#ff7f3d;}
+			.audit_section .examine_list dl dd:hover a{color:#ff7f3d;}
+			.audit_section .examine_list dl dd a:hover{color:#ff7f3d;text-decoration:underline;}
+			.audit_section .examine_list dl dd .examine_cy a .pic_cy1{background-position:-235px -6px;}
+			.audit_section .examine_list dl dd:hover .examine_cy a .pic_cy1{background-position:-4px -33px;}
+			.audit_section .examine_list dl dd .examine_cy a .pic_cy2{background-position:-258px -6px;}
+			.audit_section .examine_list dl dd:hover .examine_cy a .pic_cy2{background-position:-30px -33px;}
+			/*end examine_list*/
+
+			.audit_section .pagination{width:100%;}
+			.audit_section .page{height:40px;margin:30px 0 30px 380px;}
+			.audit_section .page a,.Previous{display:block;color:#555;padding:10px 14px;background:#f5f5f5;float:left;border:1px solid #cfcfcf; margin:0 5px;border-radius:4px;}
+			.audit_section .page span{display:block;padding:10px;float:left;margin:0 5px;}
+			.audit_section .page a:hover{background:#28bd8b;color:#fff;}
+			.pagination .page {border:none;}
+			/*audit_Popup start*/
+			.audit_Popup{width:477px;height:403px;border:1px solid #ccc;position:fixed;top:50%;left:50%;box-shadow:0px 0px 30px -19px #000;background:#f3f3f3;display:none;}
+			.audit_Popup .ptan_title{width:96%;height:20px;border-bottom:1px solid #ccc;padding:10px;}
+			.ptan_title .pic_sh{width:23px;height:20px;display:block;float:left;}
+			.ptan_title p{float:left;}
+			.ptan_title a{display:block;float:right;}
+			.ptan_title a .pic_sh{background-position:-73px -6px;}
+			.audit_Popup .ptan_con{width:79%;background:#fff;padding:30px 50px;}
+			.audit_Popup .ptan_con .dhsr{width:355px;height:198px;display:block;border:1px solid #ccc;line-height:20px;padding:10px;color:#999;}
+			.audit_Popup .ptan_bottom{width:100%;}
+			.audit_Popup .ptan_bottom a{width:100px;height:40px;display:inline-block;text-align:center;line-height:40px;border-radius:3px;}
+			.audit_Popup .ptan_bottom  .ptan_quedi{background:#28bd8b;color:#fff;margin:20px 5px 0px 250px;}
+			.audit_Popup .ptan_bottom  .ptan_quxiao{background:#f1f1f1;color:#555;border:1px solid #cdcdcd;}
+			#overrule_popup .ptan_title p .pic_sh{background-position:-50px -6px;}
+			#pass_Popup .ptan_title p .pic_sh{background-position:-184px -5px;}
+			
+
+			.audit_section .impeach_list dl dt .apply_time{width:306px;}
+			.audit_section .impeach_list dl dt .apply_material{width:100px;}
+			.audit_section .impeach_list dl dd .apply_time{width:306px;}
+			.audit_section .impeach_list dl dd .apply_material{width:100px;}
+			#clyhcy_popup .ptan_title p .pic_sh{background-position:-280px -5px;}
+			.yhcytc .ptan_con{width:417px;padding:10px 30px;}
+			.yhcytc .ptan_con ul li{margin:20px auto 0;}
+			.yhcytc .ptan_con ul li .cytc_title{width:100px;height:30px;line-height:30px;float:left;text-align:right;color:#333;font-size:16px;}
+			.yhcytc .ptan_con ul li input{width:288px;height:28px;padding-left:10px;}
+			.yhcytc .ptan_con ul li select{width:300px;height:30px;padding-left:10px;}
+			.yhcytc .ptan_con ul li select option{width:390px;}
+			.yhcytc .ptan_con ul li .clpy{width:278px;height:98px;padding:10px;}
+			
+			#boyhcy_Popup .ptan_title p .pic_sh{background-position:-51px -5px;}
+			.yhcytc .ptan_con ul li .bh_yhxy{width:14px;height:31px;float:left;margin-right:5px;}
+			.yhcytc .ptan_con ul li p{line-height:30px;font-size:14px;}
+			
+			/*end audit_Popup*/
+
+
+			.clear{clear:both;};

@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>审核</title>
+		<meta name="keywords" content="关键词,关键词">
+		<meta name="description" content="">
+		<link href="../css/public.css" rel="stylesheet" />
+		<link href="../css/sh.css" rel="stylesheet" />
+        <link href="../css/page.css" rel="stylesheet" />
+        
+	</head>
+
+	<body>
+		<div class="audit_section">
+			<h1><i class="pic_sh"></i>审核</h1>
+			<!--examine start-->
+			<div class="examine clear">
+                <div class="fytop">
+                    <div class="jfTime">
+                        <p>模糊搜索</p>
+                        <label class="glLab flotLeft"><input type="text" placeholder="请输入会员名称或单位" /></label>
+                        <a class="search">搜索</a>
+                    </div>
+                    <div class="examine_batch">
+                        <a href="javascript:;" class="e_pass"><i class="pic_sh"></i>审批通过</a>
+                        <a href="javascript:;" class="e_reject"><i class="pic_sh"></i>审批驳回</a>
+                    </div>
+                </div>
+			</div>
+			<!--end examine-->
+
+			<!--examine_list start-->
+			<div class="examine_list">
+				<dl>
+					<dt>
+						<p class="applysquare"><input type="checkbox" class="gx" name="b" />申请方</p>
+						<p class="apply_projects"><span>申请项目</span></p>
+						<p class="apply_time"><span>申请时间</span></p>
+						<p class="finally_sub"><span>最后提交时间</span></p>
+						<p class="apply_material"><span>申请材料</span></p>
+						<p class="examine_operation"><span>操作</span></p>
+					</dt>
+					<dd>
+						<p class="applysquare"><input type="checkbox" class="gx" name="a" />甲</p>
+						<p class="apply_projects"><span>XXX资格证书</span></p>
+						<p class="apply_time"><span>2016-9-24</span></p>
+						<p class="finally_sub"><span>2016-9-28</span></p>
+						<p class="apply_material"><a href="javascript:;">申请材料</a></p>
+						<p class="examine_operation"><a href="javascript:;"><i class="pic_sh"></i></a></p>
+					</dd>
+					<dd>
+						<p class="applysquare"><input type="checkbox" class="gx" name="a" />乙</p>
+						<p class="apply_projects"><span>XXX资格证书</span></p>
+						<p class="apply_time"><span>2016-9-24</span></p>
+						<p class="finally_sub"><span>2016-9-28</span></p>
+						<p class="apply_material"><a href="javascript:;">申请材料</a></p>
+						<p class="examine_operation"><a href="javascript:;"><i class="pic_sh"></i></a></p>
+					</dd>
+					<dd>
+						<p class="applysquare"><input type="checkbox" class="gx" name="a" />甲</p>
+						<p class="apply_projects"><span>XXX资格证书</span></p>
+						<p class="apply_time"><span>2016-9-24</span></p>
+						<p class="finally_sub"><span>2016-9-28</span></p>
+						<p class="apply_material"><a href="javascript:;">申请材料</a></p>
+						<p class="examine_operation"><a href="javascript:;"><i class="pic_sh"></i></a></p>
+					</dd>
+				</dl>
+				<div class="pagination">
+					<div class="page">
+						<a href="javascript:;">首页</a>
+						<a class="Previous">上一页</a>
+						<span>1</span>
+						<a href="javascript:;">2</a>
+						<a href="javascript:;">3</a>
+						<a href="javascript:;">4</a>
+						<a href="javascript:;">5</a>
+						<a href="javascript:;">...</a>
+						<a href="javascript:;">末页</a>
+						<a class="Previous" href="javascript:;">末页</a>
+					</div>
+				</div>
+			</div>
+			<!--end examine_list-->
+
+			<!--examine start-->
+			<div class="examine clear">
+                <div class="fytop">
+                    <div class="jfTime">
+                        <p>模糊搜索</p>
+                        <label class="glLab flotLeft"><input type="text" placeholder="请输入会员名称或单位" /></label>
+                        <a class="search">搜索</a>
+                    </div>
+                    <div class="examine_batch">
+                        <a href="javascript:;" class="e_pass"><i class="pic_sh"></i>审批通过</a>
+                        <a href="javascript:;" class="e_reject"><i class="pic_sh"></i>审批驳回</a>
+                    </div>
+                </div>
+			</div>
+			<!--end examine-->
+		</div>
+		
+		<!--退出修改 -->
+		<div class="audit_Popup" id="overrule_popup">
+			<div class="ptan_title">
+				<p><i class="pic_sh"></i>退出修改</p>
+				<a href="javascript:;" class="gbtc"><i class="pic_sh"></i></a>
+			</div>
+			<div class="ptan_con">
+				<textarea name="MSG" cols=40 rows=4 class="dhsr" placeholder="您确定要退回修改吗？请说明意见。" /></textarea>
+			</div>
+			<div class="ptan_bottom">
+				<a class="ptan_quedi" href="javascript:;">确定</a>
+				<a class="ptan_quxiao" href="javascript:;">取消</a>
+			</div>
+		</div>
+
+		<!--通过审核-->
+		<div class="audit_Popup" id="pass_Popup">
+			<div class="ptan_title">
+				<p><i class="pic_sh"></i>通过审核</p>
+				<a href="javascript:;" class="gbtc"><i class="pic_sh"></i></a>
+			</div>
+			<div class="ptan_con">
+				<textarea name="MSG" cols=40 rows=4 class="dhsr" placeholder="您确定要通过该申请吗？请说明意见。" /></textarea>
+			</div>
+			<div class="ptan_bottom">
+				<a class="ptan_quedi" href="javascript:;">确定</a>
+				<a class="ptan_quxiao" href="javascript:;">取消</a>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../js/jquery1.7.2.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+					//弹出退回修改
+					function tui(){
+						$("#overrule_popup").fadeIn(100);
+					}
+					//弹出通过审核
+					function tong(){
+						$("#pass_Popup").fadeIn(100);
+					}
+					//点击取消||点击弹窗上面的关闭按钮隐藏
+					function close(){
+						$(".gbtc").click(function(){
+							$(".audit_Popup").fadeOut(100);
+						});
+
+						$(".ptan_quxiao").click(function(){
+							$(".audit_Popup").fadeOut(100);
+						});
+					}
+
+					//弹窗居中方法
+					function alertTc(tcObj){
+						tcObj.show();
+						var tcObjHei = tcObj.outerHeight();
+						var tcObjWid = tcObj.outerWidth();
+						tcObj.css("margin-left",-(tcObjHei/2));
+						tcObj.css("margin-top",-(tcObjWid/2));
+					}
+
+
+					$("input[name='b']").click(function(){
+						//判断当前点击的复选框处于什么状态$(this).is(":checked") 返回的是布尔类型
+						if($(this).is(":checked")){
+							$("input[name='a']").prop("checked",true);
+							}else{
+							$("input[name='a']").prop("checked",false);
+						}
+					});
+
+
+
+					$(".e_reject").click(function(){
+						tui();
+						close();
+						alertTc($("#overrule_popup"));
+					});
+					$(".e_pass").click(function(){
+						tong();
+						close();
+						alertTc($("#pass_Popup"));
+					});
+				});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>证书列表</title>
+<link href="../css/public.css" rel="stylesheet" />
+<link href="../css/page.css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="../css/jedate.css">
+</head>
+
+<body>
+<div class="wra">
+	<div class="certificate">
+    	<a class="thisNav"><i class="ico zslb" style="background-position:0px -467px;"></i>证书列表</a>
+        <a><i class="ico dssq"></i>待审申请</a>
+        <a><i class="ico kscj"></i>考试成绩</a>
+        <a><i class="ico wxzs"></i>无效证书</a>
+        <a><i class="ico cyzs"></i>存疑证书</a>
+        <a><i class="ico sbsz"></i>申报设置</a>
+    </div>
+	<h1><i class="ico titIco"></i>证书列表</h1>
+	<div class="fytop">
+    	<div class="jfTime">
+        	<p>状态搜索</p>
+            <select class="zt flotLeft">
+            	<option>全部</option>
+                <option>搜索1</option>
+                <option>搜索2</option>
+            </select>
+            <p>模糊搜索</p>
+            <label class="glLab flotLeft"><input type="text" placeholder="请输入会员名称或单位" /></label>
+            <a class="search">搜索</a>
+        </div>
+        <div class="tjjfjl"><a class="cjzh" id="fzs"><i class="ico cjIco"></i>发证书</a></div>
+    </div>
+    <div class="tabXy zslbWar">
+        <dl>
+            <dt>
+                <span>拥有者</span>
+                <span>开始时间</span>
+                <span>截止时间</span>
+                <span>状态</span>
+                <span>费用情况</span>
+                <span>材料情况</span>
+                <span style="width:10% !important;">操作</span>
+            </dt>
+            <dd>
+                <span>甲22</span>
+                <span>2016-02-07</span>
+                <span>2016-02-07</span>
+                <span>正常</span>
+                <span>已付费</span>
+                <span>未提交</span>
+                <span class="bjbut" style="width:10% !important">
+                    <a class="zstc"><i class="ico zs_1"></i></a>
+                    <a><i class="ico userBj"></i></a>
+                    <a class="dleRem"><i class="ico zs_2"></i></a>
+                </span>
+            </dd>
+            <dd>
+                <span>乙33</span>
+                <span>2016-02-07</span>
+                <span>2016-02-07</span>
+                <span>正常</span>
+                <span>已付费</span>
+                <span>未提交</span>
+                <span class="bjbut" style="width:10% !important">
+                    <a class="zstc"><i class="ico zs_1"></i></a>
+                    <a><i class="ico userBj"></i></a>
+                    <a class="dleRem"><i class="ico zs_2"></i></a>
+                </span>
+            </dd>
+            <dd>
+                <span>乙444</span>
+                <span>2016-02-07</span>
+                <span>2016-02-07</span>
+                <span>正常</span>
+                <span>已付费</span>
+                <span>未提交</span>
+                <span class="bjbut" style="width:10% !important">
+                    <a class="zstc"><i class="ico zs_1"></i></a>
+                    <a><i class="ico userBj"></i></a>
+                    <a class="dleRem"><i class="ico zs_2"></i></a>
+                </span>
+            </dd>
+        </dl>
+        <div class="page">
+            <span><a>首页</a><a>上页</a></span>
+            <span><a>1</a><a>2</a><a>3</a><a>4</a><a>5</a><a>...</a><a>100</a></span>
+            <span><a>下页</a><a>末页</a></span>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--证书发放-->
+<div class="alert zsFang" style="width:478px;">
+	<strong><p><i class="ico zsg"></i>证书发放</p><a class="ico clo"></a></strong>
+    <div class="tableAlert" id="fszs">
+    	<form id="form">
+            <div class="alertForm">
+                <div class="lineD">
+                	<p>受证方：</p>
+                    <div class="srk"><input type="text" placeholder="点击匹配搜索受证方" name="nm_1" /></div>
+                </div>
+                <div class="lineD">
+                	<p>员工/产品名：</p>
+                    <div class="srk"><input type="text" placeholder="输入受证的产品或员工名称" name="nm_2" /></div>
+                </div>
+                <div class="lineD">
+                	<p>有效期：</p>
+                    <div class="timeDate">
+                    	<div class="timeInput"><input type="text" placeholder="请选择时间" class="inpstart" readonly name="nm_3" /><i class="ico"></i></div>
+                        <div class="timeMid">至</div>
+                        <div class="timeInput"><input type="text" placeholder="请选择时间" class="inpend" readonly name="nm_4" /><i class="ico"></i></div>
+                    </div>
+                </div>
+                <div class="lineD">
+                	<p>证书状态：</p>
+                    <select>
+                    	<option>正常</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tjan"><a class="determine sub">确定</a><a class="cancel">取消</a></div>
+        </form>
+    </div>
+</div>
+<!--证书管理-->
+<div class="alert zsgl" style="width:478px;">
+	<strong><p><i class="ico zsg"></i>证书管理</p><a class="ico clo"></a></strong>
+    <div class="tableAlert" id="fszs">
+    	<form id="form2">
+            <div class="alertForm">
+                <div class="lineD">
+                	<p>拥有者：</p>
+                    <div class="srk"><input type="text" placeholder="点击匹配搜索受证方" name="yz_nm_1" /></div>
+                </div>
+                <div class="lineD">
+                	<p>有效期：</p>
+                    <div class="timeDate">
+                    	<div class="timeInput"><input type="text" placeholder="请选择时间" class="inpstart" readonly name="yz_nm_2" /><i class="ico"></i></div>
+                        <div class="timeMid">至</div>
+                        <div class="timeInput"><input type="text" placeholder="请选择时间" class="inpend" readonly name="yz_nm_3" /><i class="ico"></i></div>
+                    </div>
+                </div>
+                <div class="lineD">
+                	<p>证书状态：</p>
+                    <select>
+                    	<option>正常</option>
+                    </select>
+                </div>
+                <div class="lineD">
+                	<p>关闭说明：</p>
+                    <div class="srk"><input type="text" placeholder="点击匹配搜索受证方" name="yz_nm_4" /></div>
+                </div>
+            </div>
+            <div class="tjan"><a class="determine sub">确定</a><a class="cancel">取消</a></div>
+        </form>
+    </div>
+</div>
+<!--确定删除-->
+<div class="alert del">
+	<strong><p><i class="ico delTs"></i>删除提示</p><a class="ico clo"></a></strong>
+    <span>您确定要删除<em>缴费项目</em><br />确认后会删除相关数据，不可恢复!!!</span>
+    <div class="tjan"><a class="determine">确定</a><a class="cancel">取消</a></div>
+</div>
+<script src="../js/jquery1.7.2.min.js"></script>
+<script src="../js/jedate.js"></script>
+<script src="../js/jquery.validate.js"></script>
+<script src="../js/js.js"></script>
+<script>
+$("#fzs").click(function(){
+	alertTc($(".zsFang"));
+});
+$(".sub").click(function(){
+	$(this).parents("form").submit();
+	alertTc($(this).parents(".alert"));	
+});
+$(".zstc").click(function(){alertTc($(".zsgl"));})
+//证书发放验证
+$("#form").validate({
+	rules:{
+		nm_1:"required",
+		nm_2:"required",
+		nm_3:"required",
+		nm_4:"required",
+	},
+	messages:{
+		nm_1:"受证方不能为空",
+		nm_2:"员工/产品名不能为空",
+		nm_3:"开始时间不能为空",
+		nm_4:"结束时间不能为空",	
+	}
+});
+//证书管理验证
+$("#form2").validate({
+	rules:{
+		yz_nm_1:"required",
+		yz_nm_2:"required",
+		yz_nm_3:"required",
+		yz_nm_4:"required",
+	},
+	messages:{
+		yz_nm_1:"拥有者不能为空",
+		yz_nm_2:"开始时间不能为空",
+		yz_nm_3:"结束时间不能为空",
+		yz_nm_4:"关闭说明不能为空",	
+	}
+});
+$(".dleRem").live("click",function(){
+	var thisNum = $(this).parents("dd").index();
+	$(".del").attr("index",thisNum);
+	alertTc($(".del"));	
+});
+$(".determine").click(function(){
+	$(".tabXy dl").children("dd").eq($(this).parents(".del").attr("index")-1).remove();
+	$(this).parents(".del").hide();
+});
+$(".zstc").click(function(){
+	alertTc($(".zsgl"));
+})
+</script>
+</body>
+</html>

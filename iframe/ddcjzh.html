@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>单独创建账号</title>
+<link href="../css/public.css" rel="stylesheet" />
+<link href="../css/page.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="wra">
+	<h1><i class="ico titIco"></i>单独创建账号</h1>
+    <div class="ddcjWa">
+    	<form id="cjzh">
+            <dl class="tablePost">
+                <dd><p><em>*</em>姓名：</p><input type="text" name="myName" placeholder="请输入会员姓名"/></dd>
+                <dd><p><em>*</em>联系方式：</p><input type="text" name="phone" placeholder="请输入联系方式" /></dd>
+                <dd>
+                    <p><em>*</em>会员类别：</p>
+                    <label><input type="radio" name="lb" checked />个人会员</label>
+                    <label><input type="radio" name="lb" />企业（团体）会员</label>
+                </dd>
+                <dd>
+                    <p><em>*</em>会员性别：</p>
+                    <label><input type="radio" name="gender" checked />男</label>
+                    <label><input type="radio" name="gender" />女</label>
+                </dd>
+                <dd><p><em>*</em>单位名称：</p><input type="text" placeholder="请输入单位名称" class="inp400" name="dwmc"/></dd>
+                <dd><p><em>*</em>单位职务：</p><input type="text" placeholder="请输入单位内职务" class="inp400" name="dwzw"/></dd>
+                <dd><p><em>*</em>会员职务：</p><input type="text" placeholder="点击选择对应会内职务" class="hwClick inp400" name="hyzw" readonly /></dd>
+                <dd class="but"><input type="submit" value="保存" class="sub"><input type="button" value="取消"></dd>
+            </dl>
+            <!--确定删除-->
+            <div class="alert del">
+                <strong><p><i class="ico delTs"></i>温馨提示</p><a class="ico clo"></a></strong>
+                <span>确定创建<em>职务-路人甲</em><br />将发短信至<em>13752812255</em>通知用户激活账号，并从账户扣除<em>0.1</em>元。</span>
+                <div class="tjan"><a class="determine" id="Tij">确定</a><a class="cancel">取消</a></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!--会员职务-->
+<div class="alert vipFw" style="width:700px;">
+	<strong><p><i class="ico hnzw"></i>会内职务</p><a class="ico clo"></a></strong>
+    <div class="tableAlert">
+    	<div class="hLeader">
+        	<h2>会领导：</h2>
+            <div class="leadLab">
+            	<label><input type="radio" name="hld" checked />名誉会长</label>
+                <label><input type="radio" name="hld" />会长</label>
+                <label><input type="radio" name="hld" />执行会长</label>
+                <label><input type="radio" name="hld" />副会长</label>
+                <label><input type="radio" name="hld" />专职副会长</label>
+                <label><input type="radio" name="hld" />常务副会长</label>
+                <label><input type="radio" name="hld" />秘书长</label>
+                <label><input type="radio" name="hld" />执行会长</label>
+            </div>
+        </div>
+    	<div class="hLeader">
+        	<h2>顾问专家：</h2>
+            <div class="leadLab">
+            	<label><input type="radio" name="gwzj" checked />顾问</label>
+                <label><input type="radio" name="gwzj" />专家</label>
+            </div>
+        </div>
+        <div class="tjan"><a class="determine">确定</a><a class="cancel">取消</a></div>
+    </div>
+</div>
+
+<script src="../js/jquery1.7.2.min.js"></script>
+<script src="../js/jquery.validate.js"></script>
+<script src="../js/js.js"></script>
+<script>
+$(function(){
+	
+	$(".hwClick").click(function(){
+		alertTc($(".vipFw"));
+	})
+
+	$("#cjzh").validate({
+		rules: {
+		  myName: "required",
+		  dwmc: "required",
+		  dwzw: "required",
+		  hyzw: "required",	
+		  phone: {
+			required:true,   
+			phone: true
+		  }
+		},
+		messages:{
+			myName:"名字不能为空",
+			dwmc:"单位名称不能为空",
+			dwzw:"单位职务不能为空",
+			hyzw:"会员职务不能为空",
+			phone:{   
+				required: "请输入您的联系电话",   
+				isPhone: "请输入一个有效的联系电话"  
+			 },   
+		},
+	  submitHandler:function(form) {
+		alertTc($(".del"));
+
+	  }
+	});
+
+	 // 手机号码验证    
+	jQuery.validator.addMethod("phone", function(value, element) {    
+	  var length = value.length;    
+	  return this.optional(element) || (length == 11 && /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/.test(value));    
+	}, "请正确填写您的手机号码。");
+	
+	
+	
+});
+
+</script>
+</body>
+</html>

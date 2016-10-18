@@ -1,0 +1,468 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>用户管理查看修改-企业信息-基本信息</title>
+		<meta name="keywords" content="关键词,关键词">
+		<meta name="description" content="">
+			
+		<link href="../css/public.css" rel="stylesheet" />
+		<link href="../css/yhglckxg-qyxx-jbxx.css" rel="stylesheet" />
+        <link href="../css/page.css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+        <div class="nrDh">
+            <div class="judh">
+                <a href="grxx2.html">个人信息</a><a href="hjxx.html">会籍信息</a><a href="fyxx.html">费用信息</a><a href="yhglckxg-qyxx-jbxx.html" class="onThis">企业信息</a>
+            </div>
+        </div>
+		<div class="containers">
+			<div class="c_title">
+				<i class="pic_qyxx"></i>
+				企业信息
+			</div>
+			<div id="tab">
+				<ul class="tab_menu">
+					<li class="selected"><a href="yhglckxg-qyxx-jbxx.html">基本信息</a></li>
+					<li><a href="yhglckxg-qyxx-jbxx_2.html">经济情况</a></li>
+					<li><a href="yhglckxg-qyxx-jbxx_3.html">产品服务</a></li>
+					<li><a href="yhglckxg-qyxx-jbxx_4.html">公益慈善</a></li>
+					<li><a href="yhglckxg-qyxx-jbxx_5.html">资质能力</a></li>
+				</ul>
+				<div class="tab_box">
+					<!--基本信息 start-->
+					<div class="b_jbxxgl">
+						<div class="basic">
+							<div class="b_icon">
+								<div class="basic_info">基本信息</div>
+							</div>
+							<form class="jbxx" id="Basic_Info" novalidate>
+								<ul class="j_item">
+									<li>
+										<div class="items">
+											<i class="pic_qyxx"></i>单人名称：
+										</div>
+										<input class="changtiao dwmc" placeholder="所在单位详细名称" type="text" name="user" />
+									</li>
+									<li>
+										<div class="items">单位性质：</div>
+										<input class="changtiao" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items">注册后：</div>
+										<input class="changtiao" placeholder="注册号/统一社会信用代码" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items">部门：</div>
+										<input class="gtys" placeholder="单位哪个部门任职" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items">职位：</div>
+										<input class="gtys" placeholder="所在部门职务" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items"><i class="pic_qyxx"></i>所在地：</div>
+										<input class="gtys" placeholder="具体到省市级" type="text" name="szd" />
+									</li>
+									<li>
+										<div class="txdz">
+											<div class="items">通讯地址：</div>
+											<input class="jtdz" placeholder="市以内具体地址" type="text" name="phone" />
+										</div>
+										<div class="yb">
+											<div class="yb_title">邮编：</div>
+											<input class="postcode" type="text" name="phone" maxlength="6" />
+										</div>
+									</li>
+									<li class="j_rz">
+										<div class="items">企业认证：</div>
+										<div class="enterprise_certification">
+											<div class="custom_options">
+												<div class="xuan_lie">
+													<div class="xuan_title">
+														<a class="x_gb">X</a>
+													</div>
+													<div class="xuan_con">TL9100</div>
+												</div>
+											</div>
+											<div class="default_option">
+												<div class="qyrz">ISO9001认证</div>
+												<div class="qyrz">TS16949</div>
+												<div class="qyrz">TL9000</div>
+												<div class="qyrz">ISO13485</div>
+												<div class="qyrz">AS9100</div>
+												<div class="qyrz qyrz_sel">ISO14001认证</div>
+												<div class="qyrz">OHSAS18001认证</div>
+												<div class="qyrz">HACCP认证</div>
+												<div class="qyrz">GAP认证</div>
+												<div class="qyrz">GMP认证</div>
+												<div class="qyrz">ISO22000</div>
+												<div class="qyrz">BS7799</div>
+												<div class="qyrz">ISO27000</div>
+												<div class="qyrz">测试管理体系</div>
+												<div class="qyrz">ISO20000</div>
+												<div class="qyrz">QC080000</div>
+												<div class="qy_inpWar">
+													<div class="qy_hzinp qy_remove clear">
+														<input type="text" class="qyrz_shur" id="srk" maxlength="12" />
+													</div>
+												</div>
+												<a class="qyrz_qd" href="javascript:;" id="qyrz_quedi">确定</a>
+												<a id="tz_rz"></a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<input type="submit" value="保存" class="save" />
+									</li>
+								</ul>
+							</form>
+							
+							<div class="b_icon">
+								<div class="basic_info">认证信息</div>
+							</div>
+							<form class="jbxx" id="auth_info" novalidate>
+								<ul class="j_item">
+									<li>
+										<div class="items">单位认证：</div>
+										<input class="gtys" placeholder="认证情况显示" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items">工商注册类型：</div>
+										<input class="gtys" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items">成立时间：</div>
+										<input class="gtys" placeholder="调用工商信息" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items">注册地址：</div>
+										<input placeholder="调用工商信息" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items">注册资本：</div>
+										<input placeholder="调用工商信息" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items">营业期限：</div>
+										<input class="gtys" placeholder="调用工商信息" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items">法人：</div>
+											<input class="gtys" placeholder="调用工商信息" type="text" name="phone" />
+									</li>
+									<li>
+										<input type="submit" value="保存" class="save" />
+									</li>
+								</ul>
+							</form>
+
+							<div class="b_icon">
+									<div class="basic_info">联系信息</div>
+								</div>
+							<form class="jbxx" id="contact_info" novalidate>
+								<ul class="j_item">
+									<li>
+										<div class="items">联系电话：</div>
+										<input class="gtys" placeholder="认证情况显示" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items">单位网址：</div>
+										<input class="gtys" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items">单位自媒体：</div>
+										<input class="gtys" placeholder="调用工商信息" type="text" name="phone" />
+									</li>
+									<li>
+										<div class="items">传真：</div>
+										<input placeholder="调用工商信息" type="text" name="phone" />
+									</li>
+									<li>
+										<input type="submit" value="保存" class="save" />
+									</li>
+								</ul>
+							</form>
+
+							<div class="b_icon">
+								<div class="basic_info">组织信息</div>
+							</div>
+							<form class="jbxx" id="Organizing_info" novalidate>
+								<ul class="zhuzixx">
+									<li class="clear">
+										<div class="j_sf">是否建立党组织：</div>
+										<div class="j_xz"><input class="sf" type="radio" name="sex" />未知</div>
+										<div class="j_xz"><input class="sf" type="radio" name="sex" />是</div>
+										<div class="j_xz"><input class="sf" type="radio" name="sex" />否</div>
+									</li>
+									<li class="clear">
+										<div class="j_sf">是否建立团组织：</div>
+										<div class="j_xz"><input class="sf" type="radio" name="sex" />未知</div>
+										<div class="j_xz"><input class="sf" type="radio" name="sex" />是</div>
+										<div class="j_xz"><input class="sf" type="radio" name="sex" />否</div>
+									</li>
+									<li class="clear">
+										<div class="j_sf">是否建立公会：</div>
+										<div class="j_xz"><input class="sf" type="radio" name="sex" />未知</div>
+										<div class="j_xz"><input class="sf" type="radio" name="sex" />是</div>
+										<div class="j_xz"><input class="sf" type="radio" name="sex" />否</div>
+										<div class="clear"></div>
+									</li>
+									<li class="clear bcjl">
+										<input type="submit" value="保存" class="save" />
+									</li>
+								</ul>
+							</form>
+						</div>
+						<div class="embranchment">
+							<div class="e_first">
+								<div class="e_t e_name">分支机构名称</div>
+								<div class="e_t e_location">所在地</div>
+								<div class="e_t e_principal">负责人</div>
+								<div class="e_t contact_number">联系电话</div>
+								<div class="e_t e_operation">操作</div>
+							</div>
+							<div class="e_organization e_first">
+								<div class="e_t qyxx_list e_name">
+									<a href="javascript:;">科技惠民计划</a>
+								</div>
+								<div class="e_t qyxx_list e_location">
+									<a href="javascript:;">江西省南昌市(青云谱区)</a>
+								</div>
+								<div class="e_t qyxx_list qyxx_list e_principal">周二蛋</div>
+								<div class="e_t qyxx_list contact_number">13025874452</div>
+								<div class="e_t qyxx_list e_operation">
+									<a class="o_biao o_update"></a>
+									<a class="o_biao o_delete dleRem"></a>
+								</div>
+							</div>
+							<div class="e_organization e_first">
+								<div class="e_t qyxx_list e_name">
+									<a href="javascript:;">科技惠民计划</a>
+								</div>
+								<div class="e_t qyxx_list e_location">
+									<a href="javascript:;">江西省南昌市(青云谱区)</a>
+								</div>
+								<div class="e_t qyxx_list e_principal">周二蛋</div>
+								<div class="e_t qyxx_list contact_number">13025874452</div>
+								<div class="e_t qyxx_list e_operation">
+									<a class="o_biao o_update"></a>
+									<a class="o_biao o_delete dleRem"></a>
+								</div>
+							</div>
+							<div class="e_organization e_first">
+								<div class="e_t qyxx_list e_name">
+									<a href="javascript:;">科技惠民计划</a>
+								</div>
+								<div class="e_t qyxx_list e_location">
+									<a href="javascript:;">江西省南昌市(青云谱区)</a>
+								</div>
+								<div class="e_t qyxx_list e_principal">周二蛋</div>
+								<div class="e_t qyxx_list contact_number">13025874452</div>
+								<div class="e_t qyxx_list e_operation">
+									<a class="o_biao o_update"></a>
+									<a class="o_biao o_delete dleRem"></a>
+								</div>
+							</div>
+							<div class="page">
+								<a class="Previous">添加分支机构</a>
+								<div class="p_paging">
+									<a href="javascript:;">首页</a>
+									<a href="javascript:;">上页</a>
+									<span>1</span>
+									<a href="javascript:;">2</a>
+									<a href="javascript:;">3</a>
+									<a href="javascript:;">4</a>
+									<a href="javascript:;">5</a>
+									<a href="javascript:;">...</a>
+									<a class="Previous">下页</a>
+									<a href="javascript:;">末页</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--end 信息 -->
+				</div>
+			</div>
+		</div>
+
+		
+        <!--确定删除-->
+        <div class="alert del">
+            <strong><p><i class="ico delTs"></i>删除提示</p><a class="ico clo"></a></strong>
+            <span>您确定要删除<br />确认后会删除相关数据，不可恢复!!!</span>
+            <div class="tjan"><a class="determine">确定</a><a class="cancel">取消</a></div>
+        </div>
+		<!--end 弹窗-->
+
+		<script type="text/javascript" src="../js/jquery1.7.2.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.validate.js"></script>
+		<script type="text/javascript" src="../js/jedate.js"></script>
+		<script src="../js/js.js"></script>
+		<script type="text/javascript">
+			/*企业认证 start*/
+				//点击删除自定义认证
+				$(".x_gb").live("click",function(){
+					$(this).parents(".xuan_lie").remove();			
+				});	
+				
+				//点击系统企业认证选项变色
+				$(function(){
+					var $table = $("#tab .default_option .qyrz");
+					$table.click(function(){
+						$(this).addClass("qyrz_sel");
+					});
+				});
+			
+				//添加认证自定义认证
+				$(function(){
+					$('#qyrz_quedi').click(function() {
+						var inp = $("#srk").val();
+						
+						if(inp != null && inp !=''){
+							alert("已成功添加"+inp+"证书");
+							$(".custom_options").append("<div class='xuan_lie'><div class='xuan_title'><a class='x_gb'>X</a></div><div class='xuan_con'>"+inp+"</div></div>");
+						
+							$(".qy_hzinp a").live("click",function(){
+								$(this).parents(".qy_remove").remove();	
+							});
+							
+							$(".qyrz_shur").val(""); //每次提交后清空输入框
+							
+						}else{
+							alert(inp+"请输入自定义证书");
+						}
+					});
+				})
+        	/*end 企业认证*/
+
+
+			/*产品服务详情图片 start*/
+				$(function(){
+					//显示详情图片
+					var $tuxq = $("#tab .product_img .p_tu1");
+					//var $xqimg = $("#tab .product_img .txxq_desc img");
+					$tuxq.hover(function(){
+						//给li添加ico样式
+						$(this).addClass("p_tu1").siblings().removeClass("p_tu1");
+						//获取小图片的src属性
+						var src = $(this).find("img").attr("src");
+						//给大图设置src属性
+						$(this).parent().find(".txxq_desc img").attr("src",src);
+						//显示隐藏
+						$(this).parent().find(".txxq_desc").show();
+					},
+					function () {
+						$(".txxq_desc").hide();
+					 });
+
+
+					//显示详情图片
+					var $xqnr = $("#tab .product_img .d_xiangxi");
+					  $xqnr.hover(function(){
+						//显示隐藏
+						$(this).parent().find(".xiangxi_details").show();
+					  },
+					  function () {
+						$(".xiangxi_details").hide();
+					  });
+				});	
+		    /*end 产品详情图片*/
+		
+			/*弹窗 start*/
+				$(function(){
+					//弹出方法
+					function fade(){
+						setTimeout(function(){
+							$("#popup").fadeIn(100);
+						});
+
+						var $tczdy = $('.emtitle_name').html();
+						 $('.tan_ts').append($tczdy);
+					}
+					
+					//点击取消||点击弹窗上面的关闭按钮隐藏
+					function close(){
+						$("#p_close").click(function(){
+							$("#popup").fadeOut(100);
+						});
+
+						$("#quxiao").click(function(){
+							$("#popup").fadeOut(100);
+						});
+					}
+
+					$(".o_delete").click(function(){
+						//调用显示弹窗方法
+						fade();
+						//调用隐藏弹窗方法
+						close();
+
+						
+
+						//确定删除按钮
+						$(".tab_box .embranchment .o_delete").live("click",function(){
+							var thisNum = $(this).parents(".e_organization").index();
+							$("#popup").show();
+							$("#popup").attr("index",thisNum);
+							alertTc($("#popup"));	
+						})
+						
+						
+						$("#quedi").click(function(){
+							$(".embranchment").children(".e_organization").eq($(this).parents("#popup").attr("index")-1).remove();
+							$(this).parents("#popup").hide();
+						});
+
+					});
+				});
+				
+
+				function alertTc(tcObj){
+					tcObj.show();
+					var tcObjHei = tcObj.outerHeight();
+					var tcObjWid = tcObj.outerWidth();
+					tcObj.css("margin-left",-(tcObjHei/2));
+					tcObj.css("margin-top",-(tcObjWid/2));
+				}
+			/*end 弹窗*/
+
+			
+		  /*验证 start*/
+			$(document).ready(function(){
+				$("#Basic_Info").validate({
+					rules:{ 
+							user:{
+								required:true
+							},
+							szd:{
+								required:true
+							}
+					},
+					messages:{ 
+							user:{ 
+								required:'单位名称不得为空'
+							},
+							szd:{
+								required:'所在地不能为空'
+							}
+					}
+				});
+			});
+		  /*end 验证*/	
+			$(".dleRem").live("click",function(){
+				var thisNum = $(this).parents(".e_organization").index();
+				var thisPar = $(this).parents(".embranchment");
+				$(".del").attr("index",thisNum);
+				alertTc($(".del"));	
+				$(".determine").click(function(){
+					thisPar.children(".e_organization").eq($(this).parents(".del").attr("index")-1).remove();
+					$(this).parents(".del").hide();
+				});
+			});
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.wra {width:1000px; margin:auto;}
+.wra h1 {font-size:30px; color:#555555; padding:60px 0 30px 0;}
+.wra h1 .titIco {width:14px; height:30px; float:left; background-position:-11px -20px; margin:5px 10px 0 0;}
+.mkTi strong {border-bottom:2px solid #ff7f3d; display:block;}
+.mkTi strong em {background-color:#ff7f3d; color:#FFF; padding:0 22px; height:32px; line-height:32px; display:inline-block; border-top-left-radius:8px; border-top-right-radius:8px;}
+.mkTi dl {padding:20px 0;}
+.tablePost dd {display:inline-block; width:100%; padding:10px 0;}
+.tablePost dd p,.mkTi .tablePost dd input { float:left;}
+.tablePost dd input[type='text'] {height:28px; line-height:28px; padding:0 10px; border:1px solid #ccc; width:190px;}
+.tablePost dd .inp400 {width:400px !important;}
+.tablePost dd p {height:30px; line-height:30px; margin-right:18px; width:100px; text-align:right;}
+.tablePost dd p em {color:#F00;}
+.tablePost dd label {display:inline-block; margin-right:10px; padding:6px 0;}
+.tablePost dd label input { float:left; margin:4px 5px 0 0;}
+.tablePost dd .sub {background-color:#28bd8b;}
+.tablePost .but {width:214px; height:40px; margin:20px auto; display:block;}
+.tablePost .but input {border:none; width:100px; height:40px; margin:auto;}
+.tablePost .but input[type='submit'] {color:#FFF; margin-right:14px;}
+.tablePost dd .inp66 {width:66px !important; margin-right:10px;}
+.tablePost dd .addInp {color:#ff7f3d; display:inline-block; padding:5px 0; margin-left:10px;}
+.tablePost dd .addInp:hover {color:#a73807;}
+.tablePost dd .addInp i {float:left; background-position:-26px -22px; width:16px; height:16px; margin:3px 5px 0 0;}
+.tablePost dd .addInp:hover i {background-position:-45px -22px;}
+.tablePost dd .hzinp {display:inline-block; position:relative;}
+.tablePost dd .inpWar {float:left; width:314px;}
+.tablePost dd .hzinp a {position:absolute; right:-40px; top:5px; color:#616161;}
+.tablePost dd .hzinp a:hover {text-decoration:underline;}
+.tablePost dd .wxqqW .hzinp { float:left;}
+.tablePost dd .wxqqW { display:inline-block; width:100%; clear:both;}
+.tablePost dd .newPb { position:absolute; top:0; left:660px;}
+.tablePost dd .wxWar { position:relative;}
+.tablePost dd .error { color:#F00; line-height:30px; padding:0 0 0 10px;}
+
+/*费用信息*/
+.fytop { display:inline-block; width:100%;}
+.fytop .jfTime p {float:left; height:40px; line-height:40px; margin-right:10px;}
+.fytop .jfTime label input {height:38px; line-height:38px; padding:0 33px 0 10px; border:1px solid #ccc;}
+.fytop .jfTime label {position:relative; display:inline-block;}
+.fytop .jfTime .glLab { float:left; margin-right:10px;}
+.fytop .jfTime label .timeIco {position:absolute; right:1px; top:1px; width:40px; height:38px; background-color:#f5f5f5; background-position:-30px -50px; border-left:1px solid #ccc;}
+.fytop .jfTime {float:left;}
+.fytop .tjjfjl {float:right;}
+.fytop .tjjfjl a {background-color:#28bd8b; padding-right:10px; height:40px; display:block; line-height:40px; color:#FFF; float:left;}
+
+
+.tabXy {margin-top:20px; box-shadow:0px -4px 21px #ccc; border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+.tabXy dl dt,.tabXy dl dd {background-color:#f9f9f9; height:44px; line-height:44px; border-bottom:1px solid #ccc; padding:0 15px;}
+.tabXy dl dt span,.tabXy dl dd span {width:17%; display:block; float:left;}
+.tabXy dl dt span:first-child,.tabXy dl dd span:first-child  {width:25%;}
+.tabXy dl dd span:last-child,.tabXy dl dt span:last-child { width:6% !important; text-align:center;}
+.tabXy dl dd span i {width:22px; height:22px; float:left; cursor:pointer;}
+.tabXy dl dd .bjbut .bianj {background-position:-108px -262px; margin-right:14px;}
+.tabXy dl dd .bjbut .clo {background-position:-128px -262px;}
+.tabXy dl dd .bjbut {padding:11px 0; width:10%;}
+.tabXy dl dd:hover {background-color:#fffeee; border-left:1px solid #F00;}
+.tabXy dl dd:hover span {color:#ff7f3d;}
+.tabXy dl dd:hover span a {color:#ff7f3d; text-decoration:underline;}
+.tabXy dl dd:hover .bjbut .bianj {background-position:-108px -284px;}
+.tabXy dl dd:hover .bjbut .clo,.tabXy dl dd:hover .bjbut .zs_2 {background-position:-128px -284px;}
+.tabXy dl dd,.tabXy dl dt,.page {border-left:1px solid #ccc; border-right:1px solid #ccc;}
+.del {width:300px;}
+.alert strong p {font-size:15px; float:left;}
+.alert strong p .delTs {background-position:0px -400px; float:left; width:13px; height:16px; margin:3px 10px;}
+.alert strong .clo {float:right; width:20px; height:20px; background-position:-18px -400px; margin-right:10px;}
+.alert strong .clo:hover {background-position:-43px -400px;}
+.alert strong {background-color:#FFF; padding:12px 0; border-bottom:1px solid #eeeeee; height:20px; display:block;}
+.del span {display:block; padding:14px 30px; font-size:15px;}
+.del span em {color:#dd662b; padding-left:10px;}
+.alert {display:none; box-shadow:0px -4px 21px #ccc;  position:fixed; top:50%; left:50%; border:1px solid #ccc; background-color:#f5f5f5;}
+.alert .tjan a {width:100px; height:40px; display:block; float:left; text-align:center; line-height:40px; border-radius:2px;}
+.alert .tjan .determine {background-color:#28bd8b; color:#FFF; border:1px solid #28bd8b; margin-right:14px;}
+.alert .tjan .determine:hover {background-color:#299c74;}
+.alert .tjan .cancel {color:#555555; border:1px solid #ccc;}
+.alert .tjan {width:218px; height:42px; margin:auto; padding:20px 0;}
+.page span a {border:1px solid #ccc; height:40px; line-height:40px; display:block; float:left; padding:0 20px; margin-right:10px; background-color:#ffffff;}
+.page span a:hover {background-color:#28bd8b; color:#fff; border:1px solid #28bd8b;}
+.page { height:42px; background-color:#f9f9f9; padding:10px;}
+.alert strong p .addJf,.alert strong p .hnzw {background-position:-66px -400px; float:left; width:16px; height:16px; margin:3px 10px;}
+.alert .tableAlert .thisTab {padding-top:20px; position:relative;}
+.alert .tableAlert .thisTab i { position:absolute; right:78px; bottom:2px; background-position:-37px -55px; width:30px; height:26px;}
+.alert .tableAlert .thisTab p {float:left; height:30px; line-height:30px; width:100px; text-align:right;}
+.alert .tableAlert .thisTab input[type='text'],.alert .tableAlert .thisTab select {width:280px; height:28px; border:1px solid #ccc; padding:0 10px; border-radius:5px;}
+.alert .tableAlert .thisTab .tsy {display:inline-block; padding-left:100px; font-size:15px; margin-top:10px;}
+.alert .tableAlert .thisTab .tsy input[type='checkbox'] {float:left; margin:5px 5px 0 0;}
+.alert .tableAlert { background-color:#FFF; border-bottom:1px solid #ccc;}
+.pay {width:476px;}
+.jfshfy {padding-left:100px;}
+.alert .tableAlert .thisTab select {width:302px;}
+.alert .tableAlert .thisTab .fyRadio {padding:10px 0;}
+.alert .tableAlert .thisTab .fyRadio label {display:inline-block; margin-right:40px;}
+.alert .tableAlert .thisTab .fyRadio label input[type='radio'] {float:left; margin:5px 5px 0 0;}
+.changeNr .jnje input { width:160px !important;}
+.changeNr .jnje em { color:#F00; margin-right:13px;}
+
+
+/*用户管理*/
+#user dl span {width:9.01%;}
+#user dl dd span {font-size:12px;}
+.zt {height:40px; border:1px solid #ccc; padding:0 10px;}
+.fytop .tjjfjl .cjzh {margin-right:10px;}
+.fytop .tjjfjl .drhy {background-color:#fc7936;}
+.fytop .tjjfjl i {width:18px; height:18px; float:left;}
+.fytop .tjjfjl .addJfjl {background-position:-168px -425px; margin:10px 0 0 5px;}
+.fytop .tjjfjl .cjzh .cjIco {background-position:0px -427px; margin:10px 0px 0 10px;}
+.fytop .tjjfjl .drhy .vipIco {background-position:-20px -427px; margin:10px 10px 0 14px;}
+.fytop .tjjfjl .drhy {text-align:left;}
+.search {background-color:#28bd8b; width:100px; height:40px; display:inline-block; text-align:center; line-height:40px; color:#FFF;}
+.tabXy dl dd .bjbut .userBj {background-position:-60px -425px; margin-right:14px;}
+.tabXy dl dd .bjbut .zs_1 {background-position:-222px -425px; margin-right:14px;}
+.tabXy dl dd .bjbut .zs_2 {background-position:-128px -262px;}
+.tabXy dl dd .bjbut .userBj_2 {background-position:-80px -425px;}
+.tabXy dl dd:hover .bjbut .userBj {background-position:-39px -425px;}
+.tabXy dl dd:hover .bjbut .userBj_2 {background-position:-101px -425px;}
+
+/*导入会员*/
+.jryhWar .textShow,.ddcjWa {box-shadow:0px -4px 21px #ccc; border:1px solid #ccc; padding:15px 20px; background-color:#FFF;}
+.jryhWar .textShow p em {color:#ff7f3d;}
+.jryhWar .textShow p {line-height:30px;}
+.vipBut a {width:114px;height:40px;display:block;line-height:40px;color:#FFF;float:left;}
+.vipBut .down {background-color:#28bd8c; margin-right:10px;}
+.vipBut a i {width:20px; height:20px; display:block; float:left;}
+.vipBut .inVip {background-color:#fc7a37;}
+.vipBut .down i {background-position:-124px -427px; margin:12px 6px 0 12px;}
+.vipBut .inVip i {background-position:-147px -427px; margin:10px 6px 0 12px;}
+.vipBut {padding:30px 0;}
+/*单独创建账号*/
+.alert strong p .hnzw { background-position:-185px -427px;}
+.hLeader {width:90%; border:1px solid #ccc; border-radius:5px; padding:0 15px; display:inline-block; margin:15px 19px 0 19px;}
+.hLeader h2 {padding:10px 0; display:block; border-bottom:1px solid #eeeeee; color:#999999;}
+.hLeader .leadLab {padding:10px 0;}
+.hLeader .leadLab label {display:inline-block; margin-right:20px; width:100px; padding:10px 0;}
+.hLeader .leadLab label input {float:left; margin:5px 4px 0 0;}
+.vipFw .tableAlert {padding-bottom:0;}
+
+/*相关证书*/
+.xgzs .tabXy dl span {width:12.5% !important;}
+.tabXy dl dd:hover .bjbut .zs_1 {background-position:-243px -425px;}
+.xgzs h2 {font-size:20px; color:#555555; margin-top:20px;}
+.alert strong p .zsg { background-position:-269px -427px; width:16px; height:16px; float:left; margin:3px 10px;}
+
+.nrDh {background-color:#FFF; display:inline-block; width:100%;}
+.nrDh a {display:block; float:left; height:46px; line-height:46px; text-align:center; width:100px;}
+.nrDh .judh {width:1000px; margin:auto;}
+.nrDh .judh .onThis {color:#ff7f3d;}
+
+
+
+/*证书列表*/
+.certificate {height:50px; background-color:#f5ede8; padding:0 20px; border:1px dashed #ccc; border-bottom:none;}
+.certificate a {width:158px; height:50px; line-height:50px; display:block; float:left; font-size:16px; color:#555555;}
+.certificate .thisNav {background-color:#f5f5f5; color:#ff7f3d;}
+.certificate a i {width:18px; height:18px; float:left; margin:15px 6px 0 34px;}
+.certificate a .zslb {background-position:0px -448px;}
+.certificate a .dssq {background-position:-20px -448px;}
+.certificate a .kscj {background-position:-40px -448px;}
+.certificate a .wxzs {background-position:-58px -448px;}
+.certificate a .cyzs {background-position:-80px -448px;}
+.certificate a .sbsz {background-position:-99px -448px;}
+.flotLeft {float:left; margin-right:10px;}
+.zslbWar dl span {width:14% !important;}
+.alertForm {padding:0 30px;}
+.alertForm .lineD {padding:10px 0; display:inline-block; width:100%;}
+.alertForm .lineD p {float:left; width:100px; height:32px; line-height:32px; text-align:right;}
+.alertForm .lineD input[type='text'] {width:290px; height:30px; border-radius:5px; border:1px solid #ccc; padding:0 10px;}
+.alertForm .lineD .timeDate .timeInput input { width:117px;}
+.alertForm .lineD .timeDate .timeInput,.alertForm .lineD .timeDate .timeMid {float:left;}
+.alertForm .lineD .timeDate .timeMid {padding:0 10px; line-height:30px;}
+.alertForm .lineD .timeDate .timeInput {position:relative;}
+.alertForm .lineD .timeDate .timeInput i {position:absolute; right:2px; top:2px; background-position:-37px -55px; width:30px; height:26px;}
+.alertForm .lineD .srk {float:left;}
+.alertForm .lineD select {border-radius:5px;border:1px solid #ccc;padding:0 10px; height:32px; width:312px;}
+#form .error,#form2 .error {display:block;}
+
+
+
+
+.tabXy dl dd {}
+.dssqWar dl dd span:first-child,.dssqWar dl dt span:first-child {width:18% !important; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding-right:20px;}
+
+
+
+

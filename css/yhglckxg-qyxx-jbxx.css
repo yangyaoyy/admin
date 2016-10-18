@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+	
+			.pic_qyxx{background:url("../images/yhglckxg-qyxx-jbxx.png") no-repeat;}
+			input{outline:none;border:1px solid #ccc;}
+			.containers{width:100%;padding-top:50px;background:#f5f5f5;}
+			.containers .c_title{width:1000px;margin:0 auto;color:#555;font-size:34px;}
+			.containers .c_title .pic_qyxx{width:12px;height:26px;display:inline-block;background-position:-6px 0px;}
+
+			.containers #tab{width:1000px;margin:30px auto;}
+			#tab .tab_menu{width:100%;}
+			#tab .tab_menu li{float:left;width:120px;height:39px;line-height:39px;text-align:center;margin-right:10px;background:#f2efef url("../images/yhglckxg-qyxx-jbxx.png") -149px -4px;font-size:16px;color:#666;}
+			#tab .tab_menu .selected{background-position:-22px -4px;cursor:pointer;}
+			#tab .tab_menu .selected a {color:#ff7f3d;}
+			#tab .tab_box{width:1000px;clear:both;background:#f9f9f9;box-shadow:0px 0px 15px -8px #000;padding:10px 0px 0px;border-top:none;behavior:url(../js/ie-css3.htc);}
+			
+			/*基本信息 start*/
+			#tab .tab_box .b_jbxxgl .basic{width:870px;margin:0 auto;}
+			.b_icon{height:30px;border-bottom:2px solid #ff7f3d;margin-top:20px;}
+			.b_icon .basic_info{width:100px;height:30px;background:url("../images/yhglckxg-qyxx-jbxx.png") no-repeat -276px 0px;text-align:center;line-height:30px;color:#fff;}
+			.tab_box .bcwbjdb{margin-top:20px;}
+			.tab_box .j_item{padding:20px 0;}
+			.tab_box .j_item li{margin:20px 0;}
+			.tab_box .items{width:100px;height:30px;line-height:30px;text-align:right;float:left;margin-right:10px;font-size:14px;color:#333;}
+			.tab_box .items .pic_qyxx{width:10px;height:20px;display:inline-block;background-position:-568px -2px;}
+			.tab_box input{width:288px;height:28px;padding-left:10px;}
+			.tab_box .changtiao{width:610px;margin-right:8px;}
+			.tab_box .error{margin-right:5px;}
+			.tab_box .txdz{float:left;}
+			.tab_box .txdz .jtdz{width:448px;}
+			.tab_box .yb .yb_title{width:45px;height:30px;float:left;line-height:30px;margin-left:20px;}
+			.tab_box .yb .postcode{width:78px;}
+			
+			.tab_box .j_rz .enterprise_certification{width:720px;float:left;}
+			.tab_box .xuan_lie{width:110px;height:56px;float:left;margin-right:10px;margin-bottom:10px;}
+			.xuan_lie .xuan_title{width:110px;height:15px;}
+			.xuan_lie .xuan_title .x_gb{width:15px;height:15px;display:block;background:#7C7C7C;float:right;text-align:center;line-height:15px;color:#fff;}
+			.xuan_lie .xuan_con{width:110px;height:39px;background:#F3144A;color:#fff;text-align:center;line-height:39px;}
+			.tab_box .enterprise_certification .default_option{border-top:1px dashed #000;padding-top:12px;display:inline-block;margin-bottom:20px;}
+			.tab_box .qyrz{width:140px;height:40px;border:1px solid #CDCDCD;float:left;margin:10px 20px 10px 0px;text-align:center;line-height:40px;cursor:pointer;background:#fff;}
+			.tab_box .qy_inpWar .qyrz_shur{width:130px;height:40px;margin:10px 20px 10px 0px;}
+			.tab_box .qy_inpWar{float:left;}
+			.tab_box .qyrz_qd{width:110px;height:30px;border:1px solid #CECECE;display:block;float:left;margin-top:20px;text-align:center;line-height:30px;background:#F5F5F5;}
+			.tab_box .qyrz_sel{border:1px solid #F3144A;}
+			.tab_box .save{width:100px;height:40px;background:#28bd8b;border-radius:2px;color:#fff;font-size:16px;display:block;margin:20px auto 0;border:none;}
+			.tab_box .bcjl{padding-top:1px;}
+			.tab_box .zhuzixx{padding-top:20px;}
+			.tab_box .zhuzixx li{margin-bottom:20px;}
+			.tab_box .j_sf{width:120px;height:30px;text-align:right;line-height:30px;float:left;margin-right:10px;color:#333;font-size:14px;}
+			.tab_box .j_xz{width:100px;height:30px;display:block;float:left;}
+			.tab_box .sf{width:15px;vertical-align:-9px;margin-right:10px;border:none;}
+
+
+
+			#tab .embranchment{width:998px;border:1px solid #ccc;box-shadow:0px 0px 15px -8px #000;}
+			.embranchment .e_first{width:998px;height:45px;background:#fff;border-bottom:1px solid #ccc;}
+			.embranchment .e_first .e_t{height:46px;float:left;font-size:16px;color:#555;text-indent:10px;line-height:46px;}
+			.embranchment .e_first .qyxx_list{height:60px;line-height:60px;}
+			.embranchment .e_first .e_name{width:270px;}
+			.embranchment .e_first .e_location,.contact_number{width:249px;}
+			.embranchment .e_first .e_principal{width:128px;}
+			.embranchment .e_first .e_operation{width:90px;text-align:center;line-height:45px;}
+			.embranchment .e_organization{width:996px;height:60px;border-bottom:1px dotted #d4d4d4;border-left:2px solid #fff;background:#f9f9f9;}
+			.embranchment .e_organization .e_t a{font-size:16px;color:#555;margin-top:20px;}
+			.embranchment .e_organization .o_biao{width:20px;height:20px;display:inline-block;background:url("../images/yhglckxg-qyxx-jbxx.png") no-repeat;}
+			.embranchment .e_organization .o_update{background-position:-463px -3px;margin-right:5px;}
+			.embranchment .e_organization .o_delete{background-position:-491px -2px;}
+			.embranchment .e_organization:hover{border-left:2px solid #f60;color:#f60;background:#fffeee;}	
+			.embranchment .e_organization:hover .e_t a{color:#ff7f3d;}
+			.embranchment .e_organization .e_t a:hover{text-decoration:underline;}
+			.embranchment .e_organization:hover .e_t .o_update{background-position:-518px -3px;}
+			.embranchment .e_organization:hover .e_t .o_delete{background-position:-543px -2px;}
+
+			.embranchment .page{width:960px;height:44px;margin:25px auto;}
+			.embranchment .page a,.Previous{display:block;color:#555;padding:10px 14px;background:#f5f5f5;float:left;border:1px solid #cfcfcf;margin:0 5px;border-radius:4px;}
+			.embranchment .page span{display:block;padding:10px;float:left;margin:0 5px;}
+			.embranchment .page .p_paging{float:right;}
+			.embranchment .page a:hover{background:#28bd8b;color:#fff;}
+			/*end 基本信息*/
+			
+			
+			/*经济情况 start*/
+			#tab .tab_box .economy .b_icon{width:870px;height:30px;border-bottom:2px solid #ff7f3d;margin:20px auto 0;}
+			#tab .tab_box .economy .b_icon .basic_info{width:100px;height:30px;background:url("../images/yhglckxg-qyxx-jbxx.png") no-repeat -276px 0px;text-align:center;line-height:30px;color:#fff;}
+			#tab .tab_box .economy .condition{width:870px;margin:0 auto;}		
+			#tab .tab_box .economy .condition #c_jj{width:750px;margin:10px auto;}
+			#tab .tab_box .economy .condition #c_jj tr td input{width:588px;height:28px;padding-left:10px;margin-left:5px;}
+			.tab_box .j_ms{width:140px;display:block;float:left;}
+			.tab_box .jyms{width:15px;vertical-align:-10px;margin-right:10px;border:none;}
+			
+			#tab .tab_box .economy .embranchment .e_first .souge{width:415px;}
+			#tab .tab_box .economy .embranchment .e_first .cxx{width:490px;}
+			#tab .tab_box .economy .embranchment .e_first .e_operation{width:70px;}
+			/*end 经济情况*/
+			
+			/*产品服务 start*/
+			#tab .tab_box .service .embranchment,
+			#tab .tab_box .charity .embranchment,
+			#tab .tab_box .Qualification .embranchment{
+				width:1000px;border-top:none;box-shadow:0px 6px 18px -8px #000;
+			}
+			
+			#tab .tab_box .service .embranchment .e_first .e_serve,.e_Category,.product_name,.product_desc{width:110px;}	
+			#tab .tab_box .service .embranchment .e_first .e_classify{width:160px;}
+			#tab .tab_box .service .embranchment .e_first .e_contacts{width:90px;}
+			#tab .tab_box .service .embranchment .e_first .e_phone{width:120px;}
+			#tab .tab_box .embranchment .e_first .product_img{width:90px;text-align:center;position:relative;}
+			#tab .tab_box .embranchment .e_first .product_img .p_tu1{width:21px;background-position:-6px -48px;}
+			#tab .tab_box .embranchment .e_first .product_img .xqtp_pic
+			#tab .tab_box .embranchment .e_first .product_img .p_tu1:hover{background-position:-34px -48px;}
+			#tab .tab_box .embranchment .e_first .product_img .txxq_desc{width:110px;height:110px;position:absolute;top:-92px;left:47px;display:none;}
+			/*end 产品服务*/
+
+			/*公益慈善 start*/
+			#tab .tab_box .charity .embranchment .e_first .solve_employment{width:250px;}
+			#tab .tab_box .charity .embranchment .e_first .e_classify,.prep,.research{width:218px;}
+			#tab .tab_box .charity .c_headline{width:100%;height:50px;margin:0 auto;background:#f5f5f5;color:#555;font-size:20px;line-height:50px;text-indent:20px;}
+			#tab .tab_box .charity .embranchment .e_first .c_genre,.c_designation{width:190px;}
+			#tab .tab_box .charity .embranchment .e_first .c_detail{width:260px;}
+			#tab .tab_box .charity .embranchment .e_first .c_money{width:130px;}
+			#tab .tab_box .charity .embranchment .e_first .c_personnel{width:124px;}
+			/*end 公益慈善*/
+
+			/*资质能力 start*/
+			#tab .tab_box .Qualification .q_headline{width:100%;height:80px;line-height:80px;background:#f9f9f9;font-size:20px;color:#555;text-indent:20px;}
+			#tab .tab_box .Qualification .embranchment .e_first .q_rank,.q_department,.q_reputation{width:269px;}
+			
+			#tab .tab_box .Qualification .embranchment .e_first .product_img .d_xiangxi{background-position:-95px -48px;margin-right:5px;}
+			#tab .tab_box .Qualification .embranchment .e_first .product_img .xiangxi_details{position:absolute;background:#fff;width:200px;height:174px;right:72px;bottom:38px;box-shadow:1px 1px 4px -1px #000;overflow:hidden;display:none;}
+			#tab .tab_box .product_img .xiangxi_details p{text-align:left;line-height:24px;}
+			#tab .tab_box .embranchment .e_organization:hover .e_t .d_xiangxi{background-position:-66px -48px;}
+			#tab .tab_box .embranchment .e_organization:hover .e_t .p_tu1{background-position:-34px -48px;}
+
+			#tab .tab_box .Qualification .embranchment .e_first .patent_name{width:277px;}
+			#tab .tab_box .Qualification .embranchment .e_first .patent_genre,.pinventor{width:130px;}
+			#tab .tab_box .Qualification .embranchment .e_first .patent_hao{width:170px;}
+			#tab .tab_box .Qualification .embranchment .e_first .p_patentee{width:100px;}
+			
+			#tab .tab_box .Qualification .embranchment .e_first .propertyright_name,.q_registration{width:253px;}
+			#tab .tab_box .Qualification .embranchment .e_first .propertyright_lx{width:300px;}
+
+			#tab .tab_box .Qualification .embranchment .e_first .thesis_name{width:176px;}
+			#tab .tab_box .Qualification .embranchment .e_first .author{width:100px;}
+			#tab .tab_box .Qualification .embranchment .e_first .post_time,.periodical,.periodical_name{width:110px;}
+			#tab .tab_box .Qualification .embranchment .e_first .rank,.grade{width:100px;}
+			#tab .tab_box .Qualification .embranchment .e_first .e_operation{width:90px;line-height:46px;}
+			/*end 资质能力*/
+
+			/*弹窗 start*/
+			#popup{width:300px;height:200px;position:fixed;top:50%;left:50%;border:1px solid #ccc;display:none;}
+			#popup .popup_title{width:100%;height:40px;background:#fafafa;}
+			#popup .popup_title .p_left{height:40px;line-height:40px;float:left;}
+			#popup .popup_title .p_left em{width:14px;height:36px;display:block;float:left;background:url("../images/popup.png") no-repeat -1px 11px;margin:0 10px;}
+			#popup .popup_title .p_left p{float:left;}
+			#popup .popup_title .popup_right{float:right;}
+			#popup .popup_title .popup_right a{width:20px;height:20px;display:block;background:url("../images/popup.png") no-repeat -18px 0px;margin:10px 10px 0 0;}
+			#popup .poput_content{width:300px;height:140px;background:#f5f5f5;padding-top:20px;}
+			#popup .poput_content .p_show{width:240px;height:70px;margin:0 auto;}
+			#popup .poput_content .p_show .tan_ts{color:#dd662b;font-size:14px;padding-left:5px;}
+			#popup .poput_content .p_button{width:250px;height:40px;margin:10px auto;}
+			#popup .poput_content .p_button a{width:100px;height:40px;display:block;background:#28bd8b;text-align:center;line-height:40px;float:left;margin-right:20px;color:#fff;font-size:14px;}
+			/*弹窗 end*/
+
+			.custom_options {display:inline-block; width:100%;padding-bottom:20px;}
+			

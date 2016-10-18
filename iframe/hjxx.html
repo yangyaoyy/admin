@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>会籍信息</title>
+<link href="../css/public.css" rel="stylesheet" />
+<link href="../css/page.css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="../css/jedate.css">
+</head>
+
+<body>
+<div class="nrDh">
+	<div class="judh">
+    	<a href="grxx2.html">个人信息</a><a href="hjxx.html" class="onThis">会籍信息</a><a href="fyxx.html">费用信息</a><a href="yhglckxg-qyxx-jbxx.html">企业信息</a>
+    </div>
+</div>
+<div class="wra">
+	<h1><i class="ico titIco"></i>会籍信息</h1>
+    <div class="ddcjWa">
+    	<form id="cjzh">
+            <dl class="tablePost">
+                <dd>
+                    <p><em>*</em>会员类别：</p>
+                    <label><input type="radio" name="lb" checked />个人会员</label>
+                    <label><input type="radio" name="lb" />企业（团体）会员</label>
+                </dd>
+                <dd><p><em>*</em>会内职务：</p><input type="text" name="myName" placeholder="点击选择对应会内职务" class="hwClick" readonly/></dd>
+
+                <dd>
+                	<p><em>*</em>入会时间：</p>
+                    <input type="text" placeholder="请选择日期" style="float:left" class="inpstart" name="rhsj" readonly/>
+                    <p>到期时间：</p>
+                    <input type="text" placeholder="请选择日期" style="float:left" class="inpend" name="dqsj" readonly/>
+                </dd>
+                <dd>
+                	<p>会费：</p>
+                    <label>20000元/年</label>
+                    <label><input type="radio" name="hf" checked />续费自动续期，不续费取消会籍</label>
+                    <label><input type="radio" name="hf" />免会费自动续期</label>
+                    <label><input type="radio" name="hf" />到期不续费会籍保留</label>
+               </dd>
+                <dd>
+                	<p>状态：</p>
+                    <label><input type="radio" name="zt" checked />正常</label>
+                    <label><input type="radio" name="zt" />冻结</label>
+               </dd>
+                <dd class="but"><input type="submit" value="保存" class="sub"><input type="button" value="取消"></dd>
+            </dl>
+        </form>
+    </div>
+    <div class="xgzs">
+    	<h2>相关证书资质</h2>
+  		  <div class="tabXy">
+            <dl>
+                <dt>
+                    <span>证书名称</span>
+                    <span>证书编号</span>
+                    <span>开始时间</span>
+                    <span>截止时间</span>
+                    <span>状态</span>
+                    <span>费用情况</span>
+                    <span>材料情况</span>
+                    <span style="width:10% !important;">操作</span>
+                </dt>
+                <dd>
+                    <span>科技惠民计划</span>
+                    <span>56545214</span>
+                    <span>2016-02-07</span>
+                    <span>2016-02-07</span>
+                    <span>正常</span>
+                    <span>已付费</span>
+                    <span>未提交</span>
+                    <span class="bjbut" style="width:10% !important">
+                    	<a class="zstc"><i class="ico zs_1"></i></a>
+                        <a><i class="ico userBj"></i></a>
+                        <a class="dleRem"><i class="ico zs_2"></i></a>
+                    </span>
+                </dd>
+                <dd>
+                    <span>科技惠民计划</span>
+                    <span>56545214</span>
+                    <span>2016-02-07</span>
+                    <span>2016-02-07</span>
+                    <span>正常</span>
+                    <span>已付费</span>
+                    <span>未提交</span>
+                    <span class="bjbut" style="width:10% !important">
+                    	<a class="zstc"><i class="ico zs_1"></i></a>
+                        <a><i class="ico userBj"></i></a>
+                        <a class="dleRem"><i class="ico zs_2"></i></a>
+                    </span>
+                </dd>
+                <dd>
+                    <span>科技惠民计划</span>
+                    <span>56545214</span>
+                    <span>2016-02-07</span>
+                    <span>2016-02-07</span>
+                    <span>正常</span>
+                    <span>已付费</span>
+                    <span>未提交</span>
+                    <span class="bjbut" style="width:10% !important">
+                    	<a class="zstc"><i class="ico zs_1"></i></a>
+                        <a><i class="ico userBj"></i></a>
+                        <a class="dleRem"><i class="ico zs_2"></i></a>
+                    </span>
+                </dd>
+            </dl>
+            <div class="page">
+                <span><a>首页</a><a>上页</a></span>
+                <span><a>1</a><a>2</a><a>3</a><a>4</a><a>5</a><a>...</a><a>100</a></span>
+                <span><a>下页</a><a>末页</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--证书管理-->
+<div class="alert zsgl" style="width:478px;">
+	<strong><p><i class="ico zsg"></i>证书管理</p><a class="ico clo"></a></strong>
+    <div class="tableAlert" id="fszs">
+    	<form id="form2">
+            <div class="alertForm">
+                <div class="lineD">
+                	<p>拥有者：</p>
+                    <div class="srk"><input type="text" placeholder="点击匹配搜索受证方" name="yz_nm_1" /></div>
+                </div>
+                <div class="lineD">
+                	<p>有效期：</p>
+                    <div class="timeDate">
+                    	<div class="timeInput"><input type="text" placeholder="请选择时间" class="inpstart" readonly name="yz_nm_2" /><i class="ico"></i></div>
+                        <div class="timeMid">至</div>
+                        <div class="timeInput"><input type="text" placeholder="请选择时间" class="inpend" readonly name="yz_nm_3" /><i class="ico"></i></div>
+                    </div>
+                </div>
+                <div class="lineD">
+                	<p>证书状态：</p>
+                    <select>
+                    	<option>正常</option>
+                    </select>
+                </div>
+                <div class="lineD">
+                	<p>关闭说明：</p>
+                    <div class="srk"><input type="text" placeholder="点击匹配搜索受证方" name="yz_nm_4" /></div>
+                </div>
+            </div>
+            <div class="tjan"><a class="determine sub">确定</a><a class="cancel">取消</a></div>
+        </form>
+    </div>
+</div>
+<!--会员职务-->
+<div class="alert vipFw" style="width:700px;">
+	<strong><p><i class="ico hnzw"></i>会内职务</p><a class="ico clo"></a></strong>
+    <div class="tableAlert">
+    	<div class="hLeader">
+        	<h2>会领导：</h2>
+            <div class="leadLab">
+            	<label><input type="radio" name="hld" checked />名誉会长</label>
+                <label><input type="radio" name="hld" />会长</label>
+                <label><input type="radio" name="hld" />执行会长</label>
+                <label><input type="radio" name="hld" />副会长</label>
+                <label><input type="radio" name="hld" />专职副会长</label>
+                <label><input type="radio" name="hld" />常务副会长</label>
+                <label><input type="radio" name="hld" />秘书长</label>
+                <label><input type="radio" name="hld" />执行会长</label>
+            </div>
+        </div>
+    	<div class="hLeader">
+        	<h2>顾问专家：</h2>
+            <div class="leadLab">
+            	<label><input type="radio" name="gwzj" checked />顾问</label>
+                <label><input type="radio" name="gwzj" />专家</label>
+            </div>
+        </div>
+        <div class="tjan"><a class="determine">确定</a><a class="cancel">取消</a></div>
+    </div>
+</div>
+<!--确定删除-->
+<div class="alert del">
+	<strong><p><i class="ico delTs"></i>删除提示</p><a class="ico clo"></a></strong>
+    <span>您确定要删除<em>缴费项目</em><br />确认后会删除相关数据，不可恢复!!!</span>
+    <div class="tjan"><a class="determine">确定</a><a class="cancel">取消</a></div>
+</div>
+<script src="../js/jquery1.7.2.min.js"></script>
+<script src="../js/jquery.validate.js"></script>
+<script src="../js/jedate.js"></script>
+<script src="../js/js.js"></script>
+<script>
+
+
+
+$(".dleRem").live("click",function(){
+	var thisNum = $(this).parents("dd").index();
+	$(".del").attr("index",thisNum);
+	alertTc($(".del"));	
+});
+$(".determine").click(function(){
+	$(".tabXy dl").children("dd").eq($(this).parents(".del").attr("index")-1).remove();
+	$(this).parents(".del").hide();
+});
+$(".hwClick").click(function(){
+	alertTc($(".vipFw"));
+})
+
+$(".zstc").click(function(){alertTc($(".zsgl"));})
+
+
+$(function(){
+	$("#cjzh").validate({
+	rules: {
+		myName:"required",
+		rhsj:"required",
+		dqsj:"required",
+		phone: {
+			required:true,   
+			phone: true
+		}
+	},
+	messages:{
+		myName:"会内职务不能为空",
+		rhsj:"入会时间不能为空",
+		dqsj:"到期时间不能为空",
+		phone:{   
+			required: "请输入您的联系电话",   
+			isPhone: "请输入一个有效的联系电话"  
+		 }
+	}
+});	
+})
+//证书管理验证
+$(".sub").click(function(){
+	$(this).parents("form").submit();
+	alertTc($(this).parents(".alert"));	
+})
+$("#form2").validate({
+	rules:{
+		yz_nm_1:"required",
+		yz_nm_2:"required",
+		yz_nm_3:"required",
+		yz_nm_4:"required",
+	},
+	messages:{
+		yz_nm_1:"拥有者不能为空",
+		yz_nm_2:"开始时间不能为空",
+		yz_nm_3:"结束时间不能为空",
+		yz_nm_4:"关闭说明不能为空",	
+	}
+});
+</script>
+</body>
+</html>
